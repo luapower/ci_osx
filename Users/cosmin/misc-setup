@@ -1,0 +1,2 @@
+# don't write .DS_Store files on our Windows shares
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
