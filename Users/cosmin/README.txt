@@ -1,7 +1,13 @@
 OSX CI SERVER SETUP HOWTO:
 ----------------------------------------------------------------------
 
-* enable the root user and set its password with:
+* set Keyboard: fastest setting; invert Option/Command keys.
+* set Mouse: disable arrogantly-so-called "natural" scrolling.
+* set Terminal:
+  * Profile: Pro, Background Opacity: 100.
+  * Shell Tab: When the shell exits: close if the shell exited cleanly.
+
+* enable the root user and set a password for it with:
     Directory Utility > Unlock
         App Menu > Edit > Enable Root User
         App Menu > Edit > Set Root Password
@@ -51,7 +57,7 @@ OSX CI SERVER SETUP HOWTO:
 
 OSX INSTALL HOWTO:
 ----------------------------------------------------------------------
-* find an OSX/MacOS dmg file to restore.
+* find an OSX/MacOS dmg file to restore on the net or a bootable ISO.
 * using Disk Utility:
   * make a new 40G partition (type "HPFS+ Journaled" for OSX <= 10.12).
   * use the "Restore" function to restore the dmg to it.
@@ -62,12 +68,13 @@ OSX INSTALL HOWTO:
   on the partition and selecting "Make image from <partition>".
   this will create a restorable dmg file that can be restored
   on any partition > 30G.
-  * enlarge the partition back to 40G or more.
+  * enlarge the partition back to 40G or more use the `diskutil`
+  cmdline utility for this as the GUI is buggy and will enlarge
+  the Recovery HD partition instead of the system one.
 
 
 
 OSX RESTORE HOWTO:
 ----------------------------------------------------------------------
 * using Disk Utility, make a 40G+ partition and restore the backup dmg
-to it and boot to it holding the Option key
-
+to it and boot to it holding the Option key.
