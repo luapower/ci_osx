@@ -1,1 +1,0 @@
-mount -t smbfs //cosmin:abcd12@10.0.0.5/x/luapower luapower
