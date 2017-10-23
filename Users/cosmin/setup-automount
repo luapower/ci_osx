@@ -13,7 +13,7 @@ grep -q auto_mnt /etc/auto_master || echo "/mnt/auto auto_mnt" | sudo tee -a /et
 
 # set luapower as the only directory in the `auto` map.
 
-echo "luapower smb://$USER:abcd12@10.0.0.5/x/luapower" | sudo tee /etc/auto_mnt >/dev/null
+echo "luapower -uid=\$UID smb://$USER:abcd12@10.0.0.5/x/luapower" | sudo tee /etc/auto_mnt >/dev/null
 
 
 # restart the automounter
