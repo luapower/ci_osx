@@ -1,4 +1,4 @@
-OSX CI SERVER SETUP HOWTO:
+LUAPOWER OSX CI SERVER SETUP HOWTO:
 ----------------------------------------------------------------------
 
 * set Keyboard: fastest setting; invert Option/Command keys.
