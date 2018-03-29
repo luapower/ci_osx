@@ -30,7 +30,11 @@ LUAPOWER OSX CI SERVER SETUP HOWTO:
 * enable ssh server with:
     Sharing > [x] Remote Login
 
-* add luapower's .ssh/id_rsa and .ssh/authorized_keys from vault.
+* add luapower's .ssh/id_rsa and .ssh/authorized_keys from vault, then:
+    chmod 700 ~/.ssh
+    chmod 600 ~/.ssh/authorized_keys
+    chmod 600 ~/.ssh/id_rsa
+  
   - allows ssh into the machine with a single key and no password.
   - allows pushing to github with a single key and no password.
 
